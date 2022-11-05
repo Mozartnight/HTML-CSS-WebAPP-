@@ -1,0 +1,215 @@
+body{
+    height:auto;
+    width:100%;
+    min-width: 320px;
+    max-width: 540px;
+    margin:0 auto;
+    -webkit-tag-higlight-color:transparent;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(130, 199, 173)    ;
+}
+
+.head p{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin:1% 0px 1%;
+    color: white;
+}
+
+.banner{
+    width:100%;
+    height: auto;
+}
+
+.body{
+    display: flex; 
+    justify-content:center;
+    width:100%;
+    background-color: rgb(26, 22, 47);
+    position: relative;
+    top:-10px;
+}
+
+/*圆角背景*/
+.boder{
+    float:left;
+    width: 95%;
+    height:auto;
+    margin: 0 0 20px;
+    border-radius: 40px;
+    background-color: #eef0f4;
+}
+
+.top{
+    display: flex; 
+    flex-direction: column;
+}
+
+/*--前三名头像*/
+
+.toper{
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;/*flex子元素底部对齐*/
+}
+
+.topers{
+    width:40%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.topersimg{
+    margin: 20% 0 0;
+    border-radius: 50%;
+}
+
+/*前三名奖牌*/
+
+.toper1{
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;/*flex子元素底部对齐*/
+    position:relative;
+    top:-10px;
+}
+
+.topers1{
+    width:40%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.medal{
+    margin: 0 0 0;
+}
+
+/*前三名字*/
+.topname{
+    margin: 0 0 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/*奖牌盖在头像上面 自适应*/
+@media screen and (max-width:540px) and (min-width:320px)
+{
+    .toper1{
+
+        top:-2vw;
+    }
+}
+
+/*票数*/
+.toupiao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.vote{
+    margin: 0 0 0;
+    font-size:14px;
+    font-weight: 500;
+    color:#909eac
+}
+
+.pick{
+    width:50px;
+    margin:2% 5% 0; 
+    color:white;
+    background-color: #ab3b2e;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+/*--前三名之后*/
+
+.ranking{
+    position: relative;
+    margin-top: 5%;
+}
+
+.rankinger{ 
+    margin-block: 4%;
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+ 
+
+.photo{
+    border-radius: 50%;
+    margin: 1%;
+}
+
+.number{
+    width:5%;
+    height:5%;
+    margin: 2%; 
+    color:white;
+    background-color: #b8c2cc;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/*flex盒子 名字 票数*/
+.else{
+    display:flex;
+    flex-direction:column;
+    position: relative;
+    left:2%;
+}
+
+
+/*三名之后，名字*/
+.name{
+    font-weight: 600;
+}
+
+/*三名之后，票数*/
+.vote2{
+    font-size:14px;
+    font-weight: 500;
+    color:#909eac;
+}
+
+/*三名之后，名字自适应*/
+@media screen and (max-width:540px) and (min-width:320px)
+{
+    .name{
+        font-size:3vw;
+    }
+}
+
+@media screen and (max-width:320px) and (min-width:0)
+{
+    .name{
+        font-size:10px;
+    }
+}
+
+.picker{
+    width:50%;
+    display: flex;
+    align-items: center;
+    flex-direction:row-reverse;
+}
+
+.end{
+    text-align: center;
+    color: #909eac;
+    margin: 10% 0 7%;
+}
